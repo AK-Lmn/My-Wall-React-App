@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-17T16:40:49.199Z",
+  "title": "Design System: Wall",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Wall Blue",
+        "tonalRamp": [
+          "oklch(15% 0.0400 255)",
+          "oklch(26% 0.0880 255)",
+          "oklch(38% 0.1280 255)",
+          "oklch(50% 0.1600 255)",
+          "oklch(62% 0.1600 255)",
+          "oklch(74% 0.1200 255)",
+          "oklch(86% 0.0640 255)",
+          "oklch(95% 0.0240 255)"
+        ]
+      },
+      "primary-deep": {
+        "role": "primary",
+        "displayName": "Deep Wall Blue",
+        "tonalRamp": [
+          "oklch(15% 0.0325 255)",
+          "oklch(26% 0.0715 255)",
+          "oklch(38% 0.1040 255)",
+          "oklch(50% 0.1300 255)",
+          "oklch(62% 0.1300 255)",
+          "oklch(74% 0.0975 255)",
+          "oklch(86% 0.0520 255)",
+          "oklch(95% 0.0195 255)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Slate Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0088 260)",
+          "oklch(26% 0.0193 260)",
+          "oklch(38% 0.0280 260)",
+          "oklch(50% 0.0350 260)",
+          "oklch(62% 0.0350 260)",
+          "oklch(74% 0.0263 260)",
+          "oklch(86% 0.0140 260)",
+          "oklch(95% 0.0053 260)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Quiet Slate",
+        "tonalRamp": [
+          "oklch(15% 0.0075 260)",
+          "oklch(26% 0.0165 260)",
+          "oklch(38% 0.0240 260)",
+          "oklch(50% 0.0300 260)",
+          "oklch(62% 0.0300 260)",
+          "oklch(74% 0.0225 260)",
+          "oklch(86% 0.0120 260)",
+          "oklch(95% 0.0045 260)"
+        ]
+      },
+      "divider": {
+        "role": "neutral",
+        "displayName": "Cool Divider",
+        "tonalRamp": [
+          "oklch(15% 0.0030 260)",
+          "oklch(26% 0.0066 260)",
+          "oklch(38% 0.0096 260)",
+          "oklch(50% 0.0120 260)",
+          "oklch(62% 0.0120 260)",
+          "oklch(74% 0.0090 260)",
+          "oklch(86% 0.0048 260)",
+          "oklch(95% 0.0018 260)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "White Paper",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0)",
+          "oklch(26% 0.0000 0)",
+          "oklch(38% 0.0000 0)",
+          "oklch(50% 0.0000 0)",
+          "oklch(62% 0.0000 0)",
+          "oklch(74% 0.0000 0)",
+          "oklch(86% 0.0000 0)",
+          "oklch(95% 0.0000 0)"
+        ]
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Cool Canvas",
+        "tonalRamp": [
+          "oklch(15% 0.0020 260)",
+          "oklch(26% 0.0044 260)",
+          "oklch(38% 0.0064 260)",
+          "oklch(50% 0.0080 260)",
+          "oklch(62% 0.0080 260)",
+          "oklch(74% 0.0060 260)",
+          "oklch(86% 0.0032 260)",
+          "oklch(95% 0.0012 260)"
+        ]
+      },
+      "composer-wash": {
+        "role": "neutral",
+        "displayName": "Composer Wash",
+        "tonalRamp": [
+          "oklch(15% 0.0037 255)",
+          "oklch(26% 0.0083 255)",
+          "oklch(38% 0.0120 255)",
+          "oklch(50% 0.0150 255)",
+          "oklch(62% 0.0150 255)",
+          "oklch(74% 0.0112 255)",
+          "oklch(86% 0.0060 255)",
+          "oklch(95% 0.0022 255)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Wordmark",
+        "purpose": "Compact wall wordmark."
+      },
+      "message": {
+        "displayName": "Feed message",
+        "purpose": "Relaxed short conversation text."
+      }
+    },
+    "shadows": [
+      {
+        "name": "shell-ambient",
+        "value": "0 5px 22px #26324405",
+        "purpose": "Desktop shell separation; removed on mobile."
+      }
+    ],
+    "motion": [
+      {
+        "name": "composer-border",
+        "value": "border-color 140ms",
+        "purpose": "Composer focus border; removed for reduced motion."
+      },
+      {
+        "name": "share-background",
+        "value": "background 140ms",
+        "purpose": "Primary button hover; removed for reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-desktop",
+        "value": "900px"
+      },
+      {
+        "name": "mobile",
+        "value": "650px"
+      },
+      {
+        "name": "wide-top-inset",
+        "value": "1400px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Share button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary composer action with hover, focus, and disabled states.",
+      "html": "<button class=\"ds-share\">Share</button>",
+      "css": ".ds-share{display:inline-flex;align-items:center;justify-content:center;background:var(--blue,#2876d6);color:#fff;font:700 13px Arial,Helvetica,sans-serif;border:1px solid var(--blue,#2876d6);border-radius:4px;min-width:91px;min-height:37px;padding:7px 19px;cursor:pointer;transition:background 140ms}.ds-share:hover{background:var(--blue-dark,#1d5fae)}.ds-share:focus-visible{outline:2px solid var(--blue,#2876d6);outline-offset:4px}.ds-share:disabled{background:#e6ebf2;border-color:#e6ebf2;color:#7a879b;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-share{transition:none}}"
+    },
+    {
+      "name": "Masthead search",
+      "kind": "input",
+      "description": "Underlined search field over the blue masthead.",
+      "html": "<label class=\"ds-search\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"m21 21-4.3-4.3\"/></svg><input type=\"search\" aria-label=\"Search Wall posts\" placeholder=\"Search the wall\"></label>",
+      "css": ".ds-search{display:flex;align-items:center;gap:9px;background:var(--blue,#2876d6);padding:12px 18px;color:#d4e5fa;width:220px}.ds-search input{width:100%;min-width:0;background:none;color:white;border:0;border-bottom:1px solid #75a4e0;padding:7px 0;font:12px Arial,Helvetica,sans-serif}.ds-search input::placeholder{color:#e0edfd;opacity:1}.ds-search input:focus{outline:0}.ds-search:focus-within input{border-color:white}"
+    },
+    {
+      "name": "Profile section navigation",
+      "kind": "nav",
+      "description": "Stacked profile sections with a pale selected surface.",
+      "html": "<nav class=\"ds-tabs\" aria-label=\"Profile sections\"><button aria-current=\"page\">Wall</button><button>Info</button><button>Photos</button><button>Boxes</button></nav>",
+      "css": ".ds-tabs{display:flex;flex-direction:column;gap:3px;width:220px}.ds-tabs button{background:none;border:0;border-radius:4px;color:var(--muted,#657184);font:12px Arial,Helvetica,sans-serif;text-align:left;padding:9px 11px;cursor:pointer}.ds-tabs button[aria-current]{background:#eaf2fd;color:#215fae;font-weight:bold}.ds-tabs button:hover{background:#f0f5fc;color:#215fae}.ds-tabs button:focus-visible{outline:2px solid var(--blue,#2876d6);outline-offset:4px}"
+    },
+    {
+      "name": "Message composer",
+      "kind": "input",
+      "refersTo": "composer",
+      "description": "Generous pale field with a dashed resting border.",
+      "html": "<textarea class=\"ds-composer\" aria-label=\"Write on the Wall\" placeholder=\"What’s on your mind?\" rows=\"4\"></textarea>",
+      "css": ".ds-composer{width:100%;min-height:145px;max-height:420px;resize:vertical;border:1px dashed #b5c9e1;border-radius:5px;background:var(--wash,#f4f8fe);color:var(--ink,#263244);padding:18px 20px;font:15px/1.65 Arial,Helvetica,sans-serif;caret-color:var(--blue,#2876d6);transition:border-color 140ms}.ds-composer::placeholder{color:#67778c;opacity:1}.ds-composer:focus{border-style:solid;background:#f8fbff;outline:2px solid #86b4ed;outline-offset:2px}@media(prefers-reduced-motion:reduce){.ds-composer{transition:none}}"
+    },
+    {
+      "name": "Feed row",
+      "kind": "card",
+      "description": "Flat conversation row with author hierarchy and quiet actions.",
+      "html": "<article class=\"ds-post\"><div class=\"ds-post-heading\"><strong>Kim Lamano</strong><time>2 hours ago</time></div><p class=\"ds-post-body\">A little life, a little code.</p><div class=\"ds-post-meta\"><button>Like</button><span>·</span><button>Comment</button><span>·</span><button>Share</button></div></article>",
+      "css": ".ds-post{background:var(--paper,#fff);color:var(--ink,#263244);border-bottom:1px solid var(--line,#e4e8ee);padding:25px 0 23px;font-family:Arial,Helvetica,sans-serif}.ds-post-heading{display:flex;align-items:baseline;justify-content:space-between;gap:15px}.ds-post-heading strong{font-size:15px;font-weight:bold;line-height:1.5}.ds-post-heading time{flex-shrink:0;font-size:10px;color:var(--muted,#657184)}.ds-post-body{margin:9px 0 0;font-size:14px;line-height:1.8;color:#435168;white-space:pre-wrap;overflow-wrap:anywhere;max-width:73ch}.ds-post-meta{display:flex;align-items:center;gap:9px;font-size:10px;color:#a3b0c2;margin-top:11px}.ds-post-meta button{background:none;border:0;padding:0;color:#376cad;font:inherit;cursor:pointer}.ds-post-meta button:hover{text-decoration:underline;text-underline-offset:3px}.ds-post-meta button:focus-visible{outline:2px solid var(--blue,#2876d6);outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Familiar Wall",
+    "overview": "A nostalgic social profile with a calm, practical reading surface. A saturated blue masthead anchors the white page; the profile portrait gives it a human focal point. Light blue fields and fine dividers organize conversation without making each post a separate floating card.\n\nThis documents the implemented code, using the user-delegated direction and `.impeccable/references/reference-1.png`. The profile uses the photo and details supplied by Kim Lamano; posting remains unauthenticated.",
+    "keyCharacteristics": [
+      "Blue masthead and compact wall wordmark.",
+      "Large desktop portrait beside an open conversation column.",
+      "Generous pale composer and plainly separated feed rows.",
+      "Strong author names, relaxed message text, quiet metadata."
+    ],
+    "rules": [],
+    "dos": [
+      "**Do** preserve the blue masthead, pale composer, and white conversation surface.",
+      "**Do** keep author names stronger than messages and metadata.",
+      "**Do** compact the profile above four tabs on mobile and keep the composer full width within its column.",
+      "**Do** retain visible focus treatments and explicit status text."
+    ],
+    "donts": [
+      "**Don't** turn the separated feed rows into individually elevated cards.",
+      "**Don't** present display names as authenticated account identities.",
+      "**Don't** style browser-local preview status as an active Supabase connection; provisioning is deferred."
+    ]
+  }
+}
+

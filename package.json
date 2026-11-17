@@ -1,0 +1,57 @@
+{
+  "name": "my-wall-react-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AK-Lmn/My-Wall-React-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/AK-Lmn/My-Wall-React-App/issues"
+  },
+  "homepage": "https://github.com/AK-Lmn/My-Wall-React-App#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "2.119.0",
+    "clsx": "2.1.1",
+    "date-fns": "4.4.0",
+    "lucide-react": "1.74.0",
+    "next": "15.5.29",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "tailwind-merge": "3.7.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "autoprefixer": "10.6.2",
+    "eslint": "9.39.5",
+    "eslint-config-next": "15.5.29",
+    "jsdom": "31.0.1",
+    "postcss": "8.5.33",
+    "prettier": "3.10.1",
+    "tailwindcss": "3.4.19",
+    "typescript": "6.0.3",
+    "vitest": "5.1.0"
+  },
+  "private": true,
+  "overrides": {
+    "next": {
+      "postcss": "8.5.33"
+    }
+  }
+}
