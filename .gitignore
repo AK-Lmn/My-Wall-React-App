@@ -9,3 +9,6 @@ coverage/
 .impeccable/references/
 .impeccable/review/
 wall-preview.jpg
+
+.vercel
+.env*
